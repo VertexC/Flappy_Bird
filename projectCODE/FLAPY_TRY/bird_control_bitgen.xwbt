@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=F:\study\Logic and Computer Design Fundamentals\final project\try\FLAPY_TRY\bird_control.ncd
+OUTFILE=F:\study\Logic and Computer Design Fundamentals\final project\try\FLAPY_TRY\bird_control.bit
+FAMILY=Artix7
+PART=xc7a100t-3csg324
+WORKINGDIR=F:\study\Logic and Computer Design Fundamentals\final project\try\FLAPY_TRY
+LICENSE=WebPack
+USER_INFO=__0_0_0

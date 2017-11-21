@@ -1,0 +1,2 @@
+FLAPY_TRY文件夹内为调试过的工程文件，bird_control为目标流代码，
+picture文件夹内为图片素材。

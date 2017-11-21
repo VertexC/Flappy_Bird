@@ -1,0 +1,4 @@
+verilog work "Random.v"
+verilog work "clkdiv.v"
+verilog work "pipe_one_high_move.v"
+verilog work "pipe_one_high.v"

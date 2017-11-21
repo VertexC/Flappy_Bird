@@ -1,0 +1,644 @@
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird.ucf -p xc7k160t-ffg676-1 "bird_control.ngc" bird_control.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird.ucf -p xc7k160t-ffg676-1 "bird_control.ngc" bird_control.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird.ucf -p xc7k160t-ffg676-1 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird.ucf 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird.ucf -p xc7k160t-ffg676-1 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird.ucf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird.ucf -p xc7k160t-ffg676-1 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird.ucf 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird.ucf -p xc7k160t-ffg676-1 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird.ucf -p xc7k160t-ffg676-1 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird.ucf 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird.ucf -p xc7k160t-ffg676-1 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird.ucf -p xc7k160t-ffg676-1 "bird_control.ngc" bird_control.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird.ucf -p xc7k160t-ffg676-1 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird.ucf 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird.ucf -p xc7k160t-ffg676-1 "bird_control.ngc" bird_control.ngd  
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird.ucf -p xc7k160t-ffg676-1 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird.ucf 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird.ucf -p xc7k160t-ffg676-1 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird.ucf -p xc7k160t-ffg676-1 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird.ucf 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc7k160t-ffg676-1 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/bird_control.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc ucf_bird_nexys4.ucf -p xc7a100t-csg324-3 "bird_control.ngc" bird_control.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o bird_control_map.ncd bird_control.ngd bird_control.pcf 
+par -w -intstyle ise -ol high -mt off bird_control_map.ncd bird_control.ncd bird_control.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr bird_control.pcf -ucf ucf_bird_nexys4.ucf 
+bitgen -intstyle ise -f bird_control.ut bird_control.ncd 

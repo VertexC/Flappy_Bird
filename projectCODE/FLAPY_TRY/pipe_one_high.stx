@@ -1,0 +1,66 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.18 secs
+ 
+--> Parameter xsthdpdir set to F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.18 secs
+ 
+--> Reading design: pipe_one_high.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Analyzing Verilog file "F:\study\Logic and Computer Design Fundamentals\final project\try\FLAPY_TRY\Random.v" into library work
+Parsing module <Random>.
+ERROR:HDLCompiler:69 - "F:\study\Logic and Computer Design Fundamentals\final project\try\FLAPY_TRY\Random.v" Line 21: <P_y> is not declared.
+ERROR:HDLCompiler:715 - "F:\study\Logic and Computer Design Fundamentals\final project\try\FLAPY_TRY\Random.v" Line 25: Port height is not defined
+ERROR:HDLCompiler:69 - "F:\study\Logic and Computer Design Fundamentals\final project\try\FLAPY_TRY\Random.v" Line 30: <P_y> is not declared.
+ERROR:HDLCompiler:69 - "F:\study\Logic and Computer Design Fundamentals\final project\try\FLAPY_TRY\Random.v" Line 32: <P_y> is not declared.
+ERROR:HDLCompiler:69 - "F:\study\Logic and Computer Design Fundamentals\final project\try\FLAPY_TRY\Random.v" Line 34: <P_y> is not declared.
+ERROR:HDLCompiler:69 - "F:\study\Logic and Computer Design Fundamentals\final project\try\FLAPY_TRY\Random.v" Line 35: <P_y> is not declared.
+ERROR:HDLCompiler:69 - "F:\study\Logic and Computer Design Fundamentals\final project\try\FLAPY_TRY\Random.v" Line 36: <P_y> is not declared.
+ERROR:HDLCompiler:69 - "F:\study\Logic and Computer Design Fundamentals\final project\try\FLAPY_TRY\Random.v" Line 37: <P_y> is not declared.
+ERROR:HDLCompiler:69 - "F:\study\Logic and Computer Design Fundamentals\final project\try\FLAPY_TRY\Random.v" Line 38: <P_y> is not declared.
+ERROR:HDLCompiler:69 - "F:\study\Logic and Computer Design Fundamentals\final project\try\FLAPY_TRY\Random.v" Line 39: <P_y> is not declared.
+ERROR:HDLCompiler:69 - "F:\study\Logic and Computer Design Fundamentals\final project\try\FLAPY_TRY\Random.v" Line 40: <P_y> is not declared.
+ERROR:HDLCompiler:69 - "F:\study\Logic and Computer Design Fundamentals\final project\try\FLAPY_TRY\Random.v" Line 41: <P_y> is not declared.
+ERROR:HDLCompiler:69 - "F:\study\Logic and Computer Design Fundamentals\final project\try\FLAPY_TRY\Random.v" Line 42: <P_y> is not declared.
+ERROR:HDLCompiler:598 - "F:\study\Logic and Computer Design Fundamentals\final project\try\FLAPY_TRY\Random.v" Line 21: Module <Random> ignored due to previous errors.
+Verilog file F:\study\Logic and Computer Design Fundamentals\final project\try\FLAPY_TRY\Random.v ignored due to errors
+--> 
+
+Total memory usage is 291220 kilobytes
+
+Number of errors   :   14 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

@@ -1,0 +1,5 @@
+verilog work "Random.v"
+verilog work "clkdiv.v"
+verilog work "pipe_two_high_move.v"
+verilog work "ipcore_dir/pipe2_high.v"
+verilog work "pipe_two_high.v"

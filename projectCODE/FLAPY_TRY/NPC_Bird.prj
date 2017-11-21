@@ -1,0 +1,6 @@
+verilog work "clkdiv.v"
+verilog work "ipcore_dir/bird_fly_up.v"
+verilog work "ipcore_dir/bird_fly_keep.v"
+verilog work "ipcore_dir/bird_fly_down.v"
+verilog work "bird_move.v"
+verilog work "NPC_Bird.v"

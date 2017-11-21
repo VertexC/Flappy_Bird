@@ -1,0 +1,3 @@
+verilog work "vga_sync.v"
+verilog work "clkdiv.v"
+verilog work "vga_test.v"

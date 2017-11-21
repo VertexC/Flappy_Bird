@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Wed Jan 04 23:15:30 2017
+# Process ID: 16272
+# Log file: F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/planAhead_run_5/planAhead.log
+# Journal file: F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/planAhead_run_5/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/pa.fromNetlist.tcl}

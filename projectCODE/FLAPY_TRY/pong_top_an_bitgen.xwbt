@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=F:\study\Logic and Computer Design Fundamentals\final project\try\FLAPY_TRY\pong_top_an.ncd
+OUTFILE=F:\study\Logic and Computer Design Fundamentals\final project\try\FLAPY_TRY\pong_top_an.bit
+FAMILY=Kintex7
+PART=xc7k160t-1ffg676
+WORKINGDIR=F:\study\Logic and Computer Design Fundamentals\final project\try\FLAPY_TRY
+LICENSE=WebPack
+USER_INFO=__0_0_0

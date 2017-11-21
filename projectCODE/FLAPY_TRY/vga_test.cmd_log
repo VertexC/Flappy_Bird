@@ -1,0 +1,58 @@
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/vga_test.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/vga_test.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/vga_test.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/vga_test.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/vga_test.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/vga_test.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/vga_test.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/vga_test.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/vga_test.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/vga_test.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/vga_test.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/vga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc K7.ucf -p xc7k160t-ffg676-1 "vga_test.ngc" vga_test.ngd  
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/vga_test.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/vga_test.syr" 
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o vga_test_map.ncd vga_test.ngd vga_test.pcf 
+par -w -intstyle ise -ol high -mt off vga_test_map.ncd vga_test.ncd vga_test.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc K7.ucf -p xc7k160t-ffg676-1 "vga_test.ngc" vga_test.ngd  
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/vga_test.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/vga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc K7.ucf -p xc7k160t-ffg676-1 "vga_test.ngc" vga_test.ngd  
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/vga_test.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/vga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc K7.ucf -p xc7k160t-ffg676-1 "vga_test.ngc" vga_test.ngd  
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/vga_test.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/vga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc K7.ucf -p xc7k160t-ffg676-1 "vga_test.ngc" vga_test.ngd  
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/vga_test.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/vga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc K7.ucf -p xc7k160t-ffg676-1 "vga_test.ngc" vga_test.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o vga_test_map.ncd vga_test.ngd vga_test.pcf 
+par -w -intstyle ise -ol high -mt off vga_test_map.ncd vga_test.ncd vga_test.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml vga_test.twx vga_test.ncd -o vga_test.twr vga_test.pcf -ucf K7.ucf 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/vga_test.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/vga_test.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/vga_test.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/vga_test.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/vga_test.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/vga_test.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/vga_test.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/vga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc K7.ucf -p xc7k160t-ffg676-1 "vga_test.ngc" vga_test.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o vga_test_map.ncd vga_test.ngd vga_test.pcf 
+par -w -intstyle ise -ol high -mt off vga_test_map.ncd vga_test.ncd vga_test.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml vga_test.twx vga_test.ncd -o vga_test.twr vga_test.pcf -ucf K7.ucf 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/vga_test.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/vga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc K7.ucf -p xc7k160t-ffg676-1 "vga_test.ngc" vga_test.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o vga_test_map.ncd vga_test.ngd vga_test.pcf 
+par -w -intstyle ise -ol high -mt off vga_test_map.ncd vga_test.ncd vga_test.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml vga_test.twx vga_test.ncd -o vga_test.twr vga_test.pcf -ucf K7.ucf 
+bitgen -intstyle ise -f vga_test.ut vga_test.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/vga_test.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/vga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc K7.ucf -p xc7k160t-ffg676-1 "vga_test.ngc" vga_test.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o vga_test_map.ncd vga_test.ngd vga_test.pcf 
+par -w -intstyle ise -ol high -mt off vga_test_map.ncd vga_test.ncd vga_test.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml vga_test.twx vga_test.ncd -o vga_test.twr vga_test.pcf -ucf K7.ucf 
+bitgen -intstyle ise -f vga_test.ut vga_test.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/vga_test.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/vga_test.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/vga_test.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/vga_test.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/vga_test.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/vga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc K7.ucf -p xc7k160t-ffg676-1 "vga_test.ngc" vga_test.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o vga_test_map.ncd vga_test.ngd vga_test.pcf 
+par -w -intstyle ise -ol high -mt off vga_test_map.ncd vga_test.ncd vga_test.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml vga_test.twx vga_test.ncd -o vga_test.twr vga_test.pcf -ucf K7.ucf 
+bitgen -intstyle ise -f vga_test.ut vga_test.ncd 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/vga_test.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/vga_test.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/vga_test.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/vga_test.syr" 
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/vga_test.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/vga_test.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc K7.ucf -p xc7k160t-ffg676-1 "vga_test.ngc" vga_test.ngd  
+map -intstyle ise -p xc7k160t-ffg676-1 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o vga_test_map.ncd vga_test.ngd vga_test.pcf 
+par -w -intstyle ise -ol high -mt off vga_test_map.ncd vga_test.ncd vga_test.pcf 
+trce -intstyle ise -v 3 -s 1 -n 3 -fastpaths -xml vga_test.twx vga_test.ncd -o vga_test.twr vga_test.pcf -ucf K7.ucf 
+bitgen -intstyle ise -f vga_test.ut vga_test.ncd 

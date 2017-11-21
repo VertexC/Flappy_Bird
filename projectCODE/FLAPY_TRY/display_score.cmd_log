@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj FLAPY_TRY -o "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/display_score.tfi" -lib work C:/Users/ﾳ²ﾩÎÄ/Desktop/project//display_score.v -module display_score -template F:/14.7/ISE_DS/ISE//data/tfi.tft -deleteonerror 

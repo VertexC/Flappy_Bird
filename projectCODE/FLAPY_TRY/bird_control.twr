@@ -1,0 +1,767 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+F:\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3 -n 3
+-fastpaths -xml bird_control.twx bird_control.ncd -o bird_control.twr
+bird_control.pcf -ucf ucf_bird_nexys4.ucf
+
+Design file:              bird_control.ncd
+Physical constraint file: bird_control.pcf
+Device,package,speed:     xc7a100t,csg324,C,-3 (PRODUCTION 1.10 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 
+50%;
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 3456995 paths analyzed, 857 endpoints analyzed, 447 failing endpoints
+ 447 timing errors detected. (447 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is  11.659ns.
+--------------------------------------------------------------------------------
+
+Paths for end point pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram (RAMB36_X3Y27.ENARDENL), 36288 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     -1.659ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               pipe_one_H/move1/pipe_pic_b_temp_6 (FF)
+  Destination:          pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram (RAM)
+  Requirement:          10.000ns
+  Data Path Delay:      9.859ns (Levels of Logic = 10)
+  Clock Path Skew:      -1.765ns (2.744 - 4.509)
+  Source Clock:         game_clk_BUFG rising at 0.000ns
+  Destination Clock:    system_clk_IBUF_BUFG rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pipe_one_H/move1/pipe_pic_b_temp_6 to pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram
+    Location                Delay type         Delay(ns)  Physical Resource
+                                                          Logical Resource(s)
+    ----------------------------------------------------  -------------------
+    SLICE_X74Y126.CQ        Tcko                  0.393   pipe_one_H/move1/pipe_pic_b_temp<6>
+                                                          pipe_one_H/move1/pipe_pic_b_temp_6
+    SLICE_X72Y126.B2        net (fanout=7)        0.842   pipe_one_H/move1/pipe_pic_b_temp<6>
+    SLICE_X72Y126.B         Tilo                  0.097   pipe_low_pic_t<8>
+                                                          pip_one_L/Madd_pipe_pic_t_cy<6>11
+    SLICE_X73Y126.A5        net (fanout=2)        0.395   pip_one_L/Madd_pipe_pic_t_cy<6>
+    SLICE_X73Y126.A         Tilo                  0.097   pipe_one_H/move1/pipe_pic_b_temp<4>
+                                                          pip_one_L/Madd_pipe_pic_t_xor<7>11
+    SLICE_X77Y132.D5        net (fanout=4)        0.542   pipe_low_pic_t<7>
+    SLICE_X77Y132.DMUX      Tilo                  0.252   pip_one_L/GND_35_o_GND_35_o_sub_3_OUT<7>
+                                                          pip_one_L/Msub_GND_35_o_GND_35_o_sub_3_OUT7
+    SLICE_X77Y133.A3        net (fanout=2)        0.454   pip_one_L/Msub_GND_35_o_GND_35_o_sub_3_OUT7
+    SLICE_X77Y133.DMUX      Topad                 0.686   pip_one_L/GND_35_o_GND_35_o_sub_3_OUT<9>
+                                                          pip_one_L/Msub_GND_35_o_GND_35_o_sub_3_OUT_lut<0>8
+                                                          pip_one_L/Msub_GND_35_o_GND_35_o_sub_3_OUT_xor<0>_10
+    DSP48_X2Y53.A16         net (fanout=6)        0.436   pip_one_L/GND_35_o_GND_35_o_sub_3_OUT<11>
+    DSP48_X2Y53.P1          Tdspdo_A_P_MULT       2.823   pip_one_L/Mmult_n0026
+                                                          pip_one_L/Mmult_n0026
+    SLICE_X79Y130.B6        net (fanout=1)        0.325   pip_one_L/n0026<1>
+    SLICE_X79Y130.COUT      Topcyb                0.509   pip_one_L/Madd_n0021_Madd_cy<3>
+                                                          pip_one_L/Madd_n0021_Madd_lut<1>
+                                                          pip_one_L/Madd_n0021_Madd_cy<3>
+    SLICE_X79Y131.CIN       net (fanout=1)        0.000   pip_one_L/Madd_n0021_Madd_cy<3>
+    SLICE_X79Y131.COUT      Tbyp                  0.089   pip_one_L/Madd_n0021_Madd_cy<7>
+                                                          pip_one_L/Madd_n0021_Madd_cy<7>
+    SLICE_X79Y132.CIN       net (fanout=1)        0.000   pip_one_L/Madd_n0021_Madd_cy<7>
+    SLICE_X79Y132.COUT      Tbyp                  0.089   pip_one_L/Madd_n0021_Madd_cy<11>
+                                                          pip_one_L/Madd_n0021_Madd_cy<11>
+    SLICE_X79Y133.CIN       net (fanout=1)        0.000   pip_one_L/Madd_n0021_Madd_cy<11>
+    SLICE_X79Y133.AMUX      Tcina                 0.297   pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/sel_pipe<1>
+                                                          pip_one_L/Madd_n0021_Madd_xor<13>
+    SLICE_X81Y135.B4        net (fanout=5)        0.556   pip_one_L/n0021<12>
+    SLICE_X81Y135.BMUX      Tilo                  0.263   pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ena_array<1>
+                                                          pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ADDR[1]_GND_16_o_equal_1_o<1>1
+    RAMB36_X3Y27.ENARDENL   net (fanout=2)        0.366   pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ena_array<0>
+    RAMB36_X3Y27.CLKARDCLKL Trcck_RDEN            0.348   pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram
+                                                          pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram
+    ----------------------------------------------------  ---------------------------
+    Total                                         9.859ns (5.943ns logic, 3.916ns route)
+                                                          (60.3% logic, 39.7% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -1.642ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               pipe_one_H/move1/pipe_pic_b_temp_6 (FF)
+  Destination:          pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram (RAM)
+  Requirement:          10.000ns
+  Data Path Delay:      9.842ns (Levels of Logic = 10)
+  Clock Path Skew:      -1.765ns (2.744 - 4.509)
+  Source Clock:         game_clk_BUFG rising at 0.000ns
+  Destination Clock:    system_clk_IBUF_BUFG rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pipe_one_H/move1/pipe_pic_b_temp_6 to pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram
+    Location                Delay type         Delay(ns)  Physical Resource
+                                                          Logical Resource(s)
+    ----------------------------------------------------  -------------------
+    SLICE_X74Y126.CQ        Tcko                  0.393   pipe_one_H/move1/pipe_pic_b_temp<6>
+                                                          pipe_one_H/move1/pipe_pic_b_temp_6
+    SLICE_X72Y126.B2        net (fanout=7)        0.842   pipe_one_H/move1/pipe_pic_b_temp<6>
+    SLICE_X72Y126.B         Tilo                  0.097   pipe_low_pic_t<8>
+                                                          pip_one_L/Madd_pipe_pic_t_cy<6>11
+    SLICE_X73Y126.A5        net (fanout=2)        0.395   pip_one_L/Madd_pipe_pic_t_cy<6>
+    SLICE_X73Y126.A         Tilo                  0.097   pipe_one_H/move1/pipe_pic_b_temp<4>
+                                                          pip_one_L/Madd_pipe_pic_t_xor<7>11
+    SLICE_X77Y132.D5        net (fanout=4)        0.542   pipe_low_pic_t<7>
+    SLICE_X77Y132.DMUX      Tilo                  0.252   pip_one_L/GND_35_o_GND_35_o_sub_3_OUT<7>
+                                                          pip_one_L/Msub_GND_35_o_GND_35_o_sub_3_OUT7
+    SLICE_X77Y133.A3        net (fanout=2)        0.454   pip_one_L/Msub_GND_35_o_GND_35_o_sub_3_OUT7
+    SLICE_X77Y133.DMUX      Topad                 0.686   pip_one_L/GND_35_o_GND_35_o_sub_3_OUT<9>
+                                                          pip_one_L/Msub_GND_35_o_GND_35_o_sub_3_OUT_lut<0>8
+                                                          pip_one_L/Msub_GND_35_o_GND_35_o_sub_3_OUT_xor<0>_10
+    DSP48_X2Y53.A16         net (fanout=6)        0.436   pip_one_L/GND_35_o_GND_35_o_sub_3_OUT<11>
+    DSP48_X2Y53.P0          Tdspdo_A_P_MULT       2.823   pip_one_L/Mmult_n0026
+                                                          pip_one_L/Mmult_n0026
+    SLICE_X79Y130.A6        net (fanout=1)        0.325   pip_one_L/n0026<0>
+    SLICE_X79Y130.COUT      Topcya                0.492   pip_one_L/Madd_n0021_Madd_cy<3>
+                                                          pip_one_L/Madd_n0021_Madd_lut<0>
+                                                          pip_one_L/Madd_n0021_Madd_cy<3>
+    SLICE_X79Y131.CIN       net (fanout=1)        0.000   pip_one_L/Madd_n0021_Madd_cy<3>
+    SLICE_X79Y131.COUT      Tbyp                  0.089   pip_one_L/Madd_n0021_Madd_cy<7>
+                                                          pip_one_L/Madd_n0021_Madd_cy<7>
+    SLICE_X79Y132.CIN       net (fanout=1)        0.000   pip_one_L/Madd_n0021_Madd_cy<7>
+    SLICE_X79Y132.COUT      Tbyp                  0.089   pip_one_L/Madd_n0021_Madd_cy<11>
+                                                          pip_one_L/Madd_n0021_Madd_cy<11>
+    SLICE_X79Y133.CIN       net (fanout=1)        0.000   pip_one_L/Madd_n0021_Madd_cy<11>
+    SLICE_X79Y133.AMUX      Tcina                 0.297   pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/sel_pipe<1>
+                                                          pip_one_L/Madd_n0021_Madd_xor<13>
+    SLICE_X81Y135.B4        net (fanout=5)        0.556   pip_one_L/n0021<12>
+    SLICE_X81Y135.BMUX      Tilo                  0.263   pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ena_array<1>
+                                                          pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ADDR[1]_GND_16_o_equal_1_o<1>1
+    RAMB36_X3Y27.ENARDENL   net (fanout=2)        0.366   pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ena_array<0>
+    RAMB36_X3Y27.CLKARDCLKL Trcck_RDEN            0.348   pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram
+                                                          pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram
+    ----------------------------------------------------  ---------------------------
+    Total                                         9.842ns (5.926ns logic, 3.916ns route)
+                                                          (60.2% logic, 39.8% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -1.633ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               pipe_one_H/move1/pipe_pic_b_temp_6 (FF)
+  Destination:          pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram (RAM)
+  Requirement:          10.000ns
+  Data Path Delay:      9.833ns (Levels of Logic = 10)
+  Clock Path Skew:      -1.765ns (2.744 - 4.509)
+  Source Clock:         game_clk_BUFG rising at 0.000ns
+  Destination Clock:    system_clk_IBUF_BUFG rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pipe_one_H/move1/pipe_pic_b_temp_6 to pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram
+    Location                Delay type         Delay(ns)  Physical Resource
+                                                          Logical Resource(s)
+    ----------------------------------------------------  -------------------
+    SLICE_X74Y126.CQ        Tcko                  0.393   pipe_one_H/move1/pipe_pic_b_temp<6>
+                                                          pipe_one_H/move1/pipe_pic_b_temp_6
+    SLICE_X72Y126.B2        net (fanout=7)        0.842   pipe_one_H/move1/pipe_pic_b_temp<6>
+    SLICE_X72Y126.B         Tilo                  0.097   pipe_low_pic_t<8>
+                                                          pip_one_L/Madd_pipe_pic_t_cy<6>11
+    SLICE_X73Y126.A5        net (fanout=2)        0.395   pip_one_L/Madd_pipe_pic_t_cy<6>
+    SLICE_X73Y126.A         Tilo                  0.097   pipe_one_H/move1/pipe_pic_b_temp<4>
+                                                          pip_one_L/Madd_pipe_pic_t_xor<7>11
+    SLICE_X77Y132.D5        net (fanout=4)        0.542   pipe_low_pic_t<7>
+    SLICE_X77Y132.DMUX      Tilo                  0.252   pip_one_L/GND_35_o_GND_35_o_sub_3_OUT<7>
+                                                          pip_one_L/Msub_GND_35_o_GND_35_o_sub_3_OUT7
+    SLICE_X77Y133.A3        net (fanout=2)        0.454   pip_one_L/Msub_GND_35_o_GND_35_o_sub_3_OUT7
+    SLICE_X77Y133.DMUX      Topad                 0.686   pip_one_L/GND_35_o_GND_35_o_sub_3_OUT<9>
+                                                          pip_one_L/Msub_GND_35_o_GND_35_o_sub_3_OUT_lut<0>8
+                                                          pip_one_L/Msub_GND_35_o_GND_35_o_sub_3_OUT_xor<0>_10
+    DSP48_X2Y53.A15         net (fanout=6)        0.410   pip_one_L/GND_35_o_GND_35_o_sub_3_OUT<11>
+    DSP48_X2Y53.P1          Tdspdo_A_P_MULT       2.823   pip_one_L/Mmult_n0026
+                                                          pip_one_L/Mmult_n0026
+    SLICE_X79Y130.B6        net (fanout=1)        0.325   pip_one_L/n0026<1>
+    SLICE_X79Y130.COUT      Topcyb                0.509   pip_one_L/Madd_n0021_Madd_cy<3>
+                                                          pip_one_L/Madd_n0021_Madd_lut<1>
+                                                          pip_one_L/Madd_n0021_Madd_cy<3>
+    SLICE_X79Y131.CIN       net (fanout=1)        0.000   pip_one_L/Madd_n0021_Madd_cy<3>
+    SLICE_X79Y131.COUT      Tbyp                  0.089   pip_one_L/Madd_n0021_Madd_cy<7>
+                                                          pip_one_L/Madd_n0021_Madd_cy<7>
+    SLICE_X79Y132.CIN       net (fanout=1)        0.000   pip_one_L/Madd_n0021_Madd_cy<7>
+    SLICE_X79Y132.COUT      Tbyp                  0.089   pip_one_L/Madd_n0021_Madd_cy<11>
+                                                          pip_one_L/Madd_n0021_Madd_cy<11>
+    SLICE_X79Y133.CIN       net (fanout=1)        0.000   pip_one_L/Madd_n0021_Madd_cy<11>
+    SLICE_X79Y133.AMUX      Tcina                 0.297   pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/sel_pipe<1>
+                                                          pip_one_L/Madd_n0021_Madd_xor<13>
+    SLICE_X81Y135.B4        net (fanout=5)        0.556   pip_one_L/n0021<12>
+    SLICE_X81Y135.BMUX      Tilo                  0.263   pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ena_array<1>
+                                                          pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ADDR[1]_GND_16_o_equal_1_o<1>1
+    RAMB36_X3Y27.ENARDENL   net (fanout=2)        0.366   pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ena_array<0>
+    RAMB36_X3Y27.CLKARDCLKL Trcck_RDEN            0.348   pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram
+                                                          pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram
+    ----------------------------------------------------  ---------------------------
+    Total                                         9.833ns (5.943ns logic, 3.890ns route)
+                                                          (60.4% logic, 39.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram (RAMB36_X3Y27.ENARDENU), 36288 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     -1.659ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               pipe_one_H/move1/pipe_pic_b_temp_6 (FF)
+  Destination:          pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram (RAM)
+  Requirement:          10.000ns
+  Data Path Delay:      9.859ns (Levels of Logic = 10)
+  Clock Path Skew:      -1.765ns (2.744 - 4.509)
+  Source Clock:         game_clk_BUFG rising at 0.000ns
+  Destination Clock:    system_clk_IBUF_BUFG rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pipe_one_H/move1/pipe_pic_b_temp_6 to pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram
+    Location                Delay type         Delay(ns)  Physical Resource
+                                                          Logical Resource(s)
+    ----------------------------------------------------  -------------------
+    SLICE_X74Y126.CQ        Tcko                  0.393   pipe_one_H/move1/pipe_pic_b_temp<6>
+                                                          pipe_one_H/move1/pipe_pic_b_temp_6
+    SLICE_X72Y126.B2        net (fanout=7)        0.842   pipe_one_H/move1/pipe_pic_b_temp<6>
+    SLICE_X72Y126.B         Tilo                  0.097   pipe_low_pic_t<8>
+                                                          pip_one_L/Madd_pipe_pic_t_cy<6>11
+    SLICE_X73Y126.A5        net (fanout=2)        0.395   pip_one_L/Madd_pipe_pic_t_cy<6>
+    SLICE_X73Y126.A         Tilo                  0.097   pipe_one_H/move1/pipe_pic_b_temp<4>
+                                                          pip_one_L/Madd_pipe_pic_t_xor<7>11
+    SLICE_X77Y132.D5        net (fanout=4)        0.542   pipe_low_pic_t<7>
+    SLICE_X77Y132.DMUX      Tilo                  0.252   pip_one_L/GND_35_o_GND_35_o_sub_3_OUT<7>
+                                                          pip_one_L/Msub_GND_35_o_GND_35_o_sub_3_OUT7
+    SLICE_X77Y133.A3        net (fanout=2)        0.454   pip_one_L/Msub_GND_35_o_GND_35_o_sub_3_OUT7
+    SLICE_X77Y133.DMUX      Topad                 0.686   pip_one_L/GND_35_o_GND_35_o_sub_3_OUT<9>
+                                                          pip_one_L/Msub_GND_35_o_GND_35_o_sub_3_OUT_lut<0>8
+                                                          pip_one_L/Msub_GND_35_o_GND_35_o_sub_3_OUT_xor<0>_10
+    DSP48_X2Y53.A16         net (fanout=6)        0.436   pip_one_L/GND_35_o_GND_35_o_sub_3_OUT<11>
+    DSP48_X2Y53.P1          Tdspdo_A_P_MULT       2.823   pip_one_L/Mmult_n0026
+                                                          pip_one_L/Mmult_n0026
+    SLICE_X79Y130.B6        net (fanout=1)        0.325   pip_one_L/n0026<1>
+    SLICE_X79Y130.COUT      Topcyb                0.509   pip_one_L/Madd_n0021_Madd_cy<3>
+                                                          pip_one_L/Madd_n0021_Madd_lut<1>
+                                                          pip_one_L/Madd_n0021_Madd_cy<3>
+    SLICE_X79Y131.CIN       net (fanout=1)        0.000   pip_one_L/Madd_n0021_Madd_cy<3>
+    SLICE_X79Y131.COUT      Tbyp                  0.089   pip_one_L/Madd_n0021_Madd_cy<7>
+                                                          pip_one_L/Madd_n0021_Madd_cy<7>
+    SLICE_X79Y132.CIN       net (fanout=1)        0.000   pip_one_L/Madd_n0021_Madd_cy<7>
+    SLICE_X79Y132.COUT      Tbyp                  0.089   pip_one_L/Madd_n0021_Madd_cy<11>
+                                                          pip_one_L/Madd_n0021_Madd_cy<11>
+    SLICE_X79Y133.CIN       net (fanout=1)        0.000   pip_one_L/Madd_n0021_Madd_cy<11>
+    SLICE_X79Y133.AMUX      Tcina                 0.297   pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/sel_pipe<1>
+                                                          pip_one_L/Madd_n0021_Madd_xor<13>
+    SLICE_X81Y135.B4        net (fanout=5)        0.556   pip_one_L/n0021<12>
+    SLICE_X81Y135.BMUX      Tilo                  0.263   pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ena_array<1>
+                                                          pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ADDR[1]_GND_16_o_equal_1_o<1>1
+    RAMB36_X3Y27.ENARDENU   net (fanout=2)        0.366   pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ena_array<0>
+    RAMB36_X3Y27.CLKARDCLKU Trcck_RDEN            0.348   pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram
+                                                          pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram
+    ----------------------------------------------------  ---------------------------
+    Total                                         9.859ns (5.943ns logic, 3.916ns route)
+                                                          (60.3% logic, 39.7% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -1.642ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               pipe_one_H/move1/pipe_pic_b_temp_6 (FF)
+  Destination:          pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram (RAM)
+  Requirement:          10.000ns
+  Data Path Delay:      9.842ns (Levels of Logic = 10)
+  Clock Path Skew:      -1.765ns (2.744 - 4.509)
+  Source Clock:         game_clk_BUFG rising at 0.000ns
+  Destination Clock:    system_clk_IBUF_BUFG rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pipe_one_H/move1/pipe_pic_b_temp_6 to pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram
+    Location                Delay type         Delay(ns)  Physical Resource
+                                                          Logical Resource(s)
+    ----------------------------------------------------  -------------------
+    SLICE_X74Y126.CQ        Tcko                  0.393   pipe_one_H/move1/pipe_pic_b_temp<6>
+                                                          pipe_one_H/move1/pipe_pic_b_temp_6
+    SLICE_X72Y126.B2        net (fanout=7)        0.842   pipe_one_H/move1/pipe_pic_b_temp<6>
+    SLICE_X72Y126.B         Tilo                  0.097   pipe_low_pic_t<8>
+                                                          pip_one_L/Madd_pipe_pic_t_cy<6>11
+    SLICE_X73Y126.A5        net (fanout=2)        0.395   pip_one_L/Madd_pipe_pic_t_cy<6>
+    SLICE_X73Y126.A         Tilo                  0.097   pipe_one_H/move1/pipe_pic_b_temp<4>
+                                                          pip_one_L/Madd_pipe_pic_t_xor<7>11
+    SLICE_X77Y132.D5        net (fanout=4)        0.542   pipe_low_pic_t<7>
+    SLICE_X77Y132.DMUX      Tilo                  0.252   pip_one_L/GND_35_o_GND_35_o_sub_3_OUT<7>
+                                                          pip_one_L/Msub_GND_35_o_GND_35_o_sub_3_OUT7
+    SLICE_X77Y133.A3        net (fanout=2)        0.454   pip_one_L/Msub_GND_35_o_GND_35_o_sub_3_OUT7
+    SLICE_X77Y133.DMUX      Topad                 0.686   pip_one_L/GND_35_o_GND_35_o_sub_3_OUT<9>
+                                                          pip_one_L/Msub_GND_35_o_GND_35_o_sub_3_OUT_lut<0>8
+                                                          pip_one_L/Msub_GND_35_o_GND_35_o_sub_3_OUT_xor<0>_10
+    DSP48_X2Y53.A16         net (fanout=6)        0.436   pip_one_L/GND_35_o_GND_35_o_sub_3_OUT<11>
+    DSP48_X2Y53.P0          Tdspdo_A_P_MULT       2.823   pip_one_L/Mmult_n0026
+                                                          pip_one_L/Mmult_n0026
+    SLICE_X79Y130.A6        net (fanout=1)        0.325   pip_one_L/n0026<0>
+    SLICE_X79Y130.COUT      Topcya                0.492   pip_one_L/Madd_n0021_Madd_cy<3>
+                                                          pip_one_L/Madd_n0021_Madd_lut<0>
+                                                          pip_one_L/Madd_n0021_Madd_cy<3>
+    SLICE_X79Y131.CIN       net (fanout=1)        0.000   pip_one_L/Madd_n0021_Madd_cy<3>
+    SLICE_X79Y131.COUT      Tbyp                  0.089   pip_one_L/Madd_n0021_Madd_cy<7>
+                                                          pip_one_L/Madd_n0021_Madd_cy<7>
+    SLICE_X79Y132.CIN       net (fanout=1)        0.000   pip_one_L/Madd_n0021_Madd_cy<7>
+    SLICE_X79Y132.COUT      Tbyp                  0.089   pip_one_L/Madd_n0021_Madd_cy<11>
+                                                          pip_one_L/Madd_n0021_Madd_cy<11>
+    SLICE_X79Y133.CIN       net (fanout=1)        0.000   pip_one_L/Madd_n0021_Madd_cy<11>
+    SLICE_X79Y133.AMUX      Tcina                 0.297   pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/sel_pipe<1>
+                                                          pip_one_L/Madd_n0021_Madd_xor<13>
+    SLICE_X81Y135.B4        net (fanout=5)        0.556   pip_one_L/n0021<12>
+    SLICE_X81Y135.BMUX      Tilo                  0.263   pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ena_array<1>
+                                                          pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ADDR[1]_GND_16_o_equal_1_o<1>1
+    RAMB36_X3Y27.ENARDENU   net (fanout=2)        0.366   pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ena_array<0>
+    RAMB36_X3Y27.CLKARDCLKU Trcck_RDEN            0.348   pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram
+                                                          pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram
+    ----------------------------------------------------  ---------------------------
+    Total                                         9.842ns (5.926ns logic, 3.916ns route)
+                                                          (60.2% logic, 39.8% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -1.633ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               pipe_one_H/move1/pipe_pic_b_temp_6 (FF)
+  Destination:          pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram (RAM)
+  Requirement:          10.000ns
+  Data Path Delay:      9.833ns (Levels of Logic = 10)
+  Clock Path Skew:      -1.765ns (2.744 - 4.509)
+  Source Clock:         game_clk_BUFG rising at 0.000ns
+  Destination Clock:    system_clk_IBUF_BUFG rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pipe_one_H/move1/pipe_pic_b_temp_6 to pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram
+    Location                Delay type         Delay(ns)  Physical Resource
+                                                          Logical Resource(s)
+    ----------------------------------------------------  -------------------
+    SLICE_X74Y126.CQ        Tcko                  0.393   pipe_one_H/move1/pipe_pic_b_temp<6>
+                                                          pipe_one_H/move1/pipe_pic_b_temp_6
+    SLICE_X72Y126.B2        net (fanout=7)        0.842   pipe_one_H/move1/pipe_pic_b_temp<6>
+    SLICE_X72Y126.B         Tilo                  0.097   pipe_low_pic_t<8>
+                                                          pip_one_L/Madd_pipe_pic_t_cy<6>11
+    SLICE_X73Y126.A5        net (fanout=2)        0.395   pip_one_L/Madd_pipe_pic_t_cy<6>
+    SLICE_X73Y126.A         Tilo                  0.097   pipe_one_H/move1/pipe_pic_b_temp<4>
+                                                          pip_one_L/Madd_pipe_pic_t_xor<7>11
+    SLICE_X77Y132.D5        net (fanout=4)        0.542   pipe_low_pic_t<7>
+    SLICE_X77Y132.DMUX      Tilo                  0.252   pip_one_L/GND_35_o_GND_35_o_sub_3_OUT<7>
+                                                          pip_one_L/Msub_GND_35_o_GND_35_o_sub_3_OUT7
+    SLICE_X77Y133.A3        net (fanout=2)        0.454   pip_one_L/Msub_GND_35_o_GND_35_o_sub_3_OUT7
+    SLICE_X77Y133.DMUX      Topad                 0.686   pip_one_L/GND_35_o_GND_35_o_sub_3_OUT<9>
+                                                          pip_one_L/Msub_GND_35_o_GND_35_o_sub_3_OUT_lut<0>8
+                                                          pip_one_L/Msub_GND_35_o_GND_35_o_sub_3_OUT_xor<0>_10
+    DSP48_X2Y53.A15         net (fanout=6)        0.410   pip_one_L/GND_35_o_GND_35_o_sub_3_OUT<11>
+    DSP48_X2Y53.P1          Tdspdo_A_P_MULT       2.823   pip_one_L/Mmult_n0026
+                                                          pip_one_L/Mmult_n0026
+    SLICE_X79Y130.B6        net (fanout=1)        0.325   pip_one_L/n0026<1>
+    SLICE_X79Y130.COUT      Topcyb                0.509   pip_one_L/Madd_n0021_Madd_cy<3>
+                                                          pip_one_L/Madd_n0021_Madd_lut<1>
+                                                          pip_one_L/Madd_n0021_Madd_cy<3>
+    SLICE_X79Y131.CIN       net (fanout=1)        0.000   pip_one_L/Madd_n0021_Madd_cy<3>
+    SLICE_X79Y131.COUT      Tbyp                  0.089   pip_one_L/Madd_n0021_Madd_cy<7>
+                                                          pip_one_L/Madd_n0021_Madd_cy<7>
+    SLICE_X79Y132.CIN       net (fanout=1)        0.000   pip_one_L/Madd_n0021_Madd_cy<7>
+    SLICE_X79Y132.COUT      Tbyp                  0.089   pip_one_L/Madd_n0021_Madd_cy<11>
+                                                          pip_one_L/Madd_n0021_Madd_cy<11>
+    SLICE_X79Y133.CIN       net (fanout=1)        0.000   pip_one_L/Madd_n0021_Madd_cy<11>
+    SLICE_X79Y133.AMUX      Tcina                 0.297   pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/sel_pipe<1>
+                                                          pip_one_L/Madd_n0021_Madd_xor<13>
+    SLICE_X81Y135.B4        net (fanout=5)        0.556   pip_one_L/n0021<12>
+    SLICE_X81Y135.BMUX      Tilo                  0.263   pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ena_array<1>
+                                                          pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ADDR[1]_GND_16_o_equal_1_o<1>1
+    RAMB36_X3Y27.ENARDENU   net (fanout=2)        0.366   pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ena_array<0>
+    RAMB36_X3Y27.CLKARDCLKU Trcck_RDEN            0.348   pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram
+                                                          pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[2].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram
+    ----------------------------------------------------  ---------------------------
+    Total                                         9.833ns (5.943ns logic, 3.890ns route)
+                                                          (60.4% logic, 39.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram (RAMB36_X2Y27.ENARDENL), 36288 paths
+--------------------------------------------------------------------------------
+Slack (setup path):     -1.494ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               pipe_one_H/move1/pipe_pic_b_temp_6 (FF)
+  Destination:          pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram (RAM)
+  Requirement:          10.000ns
+  Data Path Delay:      9.686ns (Levels of Logic = 10)
+  Clock Path Skew:      -1.773ns (2.736 - 4.509)
+  Source Clock:         game_clk_BUFG rising at 0.000ns
+  Destination Clock:    system_clk_IBUF_BUFG rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pipe_one_H/move1/pipe_pic_b_temp_6 to pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram
+    Location                Delay type         Delay(ns)  Physical Resource
+                                                          Logical Resource(s)
+    ----------------------------------------------------  -------------------
+    SLICE_X74Y126.CQ        Tcko                  0.393   pipe_one_H/move1/pipe_pic_b_temp<6>
+                                                          pipe_one_H/move1/pipe_pic_b_temp_6
+    SLICE_X72Y126.B2        net (fanout=7)        0.842   pipe_one_H/move1/pipe_pic_b_temp<6>
+    SLICE_X72Y126.B         Tilo                  0.097   pipe_low_pic_t<8>
+                                                          pip_one_L/Madd_pipe_pic_t_cy<6>11
+    SLICE_X73Y126.A5        net (fanout=2)        0.395   pip_one_L/Madd_pipe_pic_t_cy<6>
+    SLICE_X73Y126.A         Tilo                  0.097   pipe_one_H/move1/pipe_pic_b_temp<4>
+                                                          pip_one_L/Madd_pipe_pic_t_xor<7>11
+    SLICE_X77Y132.D5        net (fanout=4)        0.542   pipe_low_pic_t<7>
+    SLICE_X77Y132.DMUX      Tilo                  0.252   pip_one_L/GND_35_o_GND_35_o_sub_3_OUT<7>
+                                                          pip_one_L/Msub_GND_35_o_GND_35_o_sub_3_OUT7
+    SLICE_X77Y133.A3        net (fanout=2)        0.454   pip_one_L/Msub_GND_35_o_GND_35_o_sub_3_OUT7
+    SLICE_X77Y133.DMUX      Topad                 0.686   pip_one_L/GND_35_o_GND_35_o_sub_3_OUT<9>
+                                                          pip_one_L/Msub_GND_35_o_GND_35_o_sub_3_OUT_lut<0>8
+                                                          pip_one_L/Msub_GND_35_o_GND_35_o_sub_3_OUT_xor<0>_10
+    DSP48_X2Y53.A16         net (fanout=6)        0.436   pip_one_L/GND_35_o_GND_35_o_sub_3_OUT<11>
+    DSP48_X2Y53.P1          Tdspdo_A_P_MULT       2.823   pip_one_L/Mmult_n0026
+                                                          pip_one_L/Mmult_n0026
+    SLICE_X79Y130.B6        net (fanout=1)        0.325   pip_one_L/n0026<1>
+    SLICE_X79Y130.COUT      Topcyb                0.509   pip_one_L/Madd_n0021_Madd_cy<3>
+                                                          pip_one_L/Madd_n0021_Madd_lut<1>
+                                                          pip_one_L/Madd_n0021_Madd_cy<3>
+    SLICE_X79Y131.CIN       net (fanout=1)        0.000   pip_one_L/Madd_n0021_Madd_cy<3>
+    SLICE_X79Y131.COUT      Tbyp                  0.089   pip_one_L/Madd_n0021_Madd_cy<7>
+                                                          pip_one_L/Madd_n0021_Madd_cy<7>
+    SLICE_X79Y132.CIN       net (fanout=1)        0.000   pip_one_L/Madd_n0021_Madd_cy<7>
+    SLICE_X79Y132.COUT      Tbyp                  0.089   pip_one_L/Madd_n0021_Madd_cy<11>
+                                                          pip_one_L/Madd_n0021_Madd_cy<11>
+    SLICE_X79Y133.CIN       net (fanout=1)        0.000   pip_one_L/Madd_n0021_Madd_cy<11>
+    SLICE_X79Y133.AMUX      Tcina                 0.297   pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/sel_pipe<1>
+                                                          pip_one_L/Madd_n0021_Madd_xor<13>
+    SLICE_X76Y136.D5        net (fanout=5)        0.567   pip_one_L/n0021<12>
+    SLICE_X76Y136.D         Tilo                  0.097   pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ena_array<2>
+                                                          pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ADDR[1]_PWR_16_o_equal_3_o<1>1
+    RAMB36_X2Y27.ENARDENL   net (fanout=2)        0.348   pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ena_array<2>
+    RAMB36_X2Y27.CLKARDCLKL Trcck_RDEN            0.348   pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram
+                                                          pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram
+    ----------------------------------------------------  ---------------------------
+    Total                                         9.686ns (5.777ns logic, 3.909ns route)
+                                                          (59.6% logic, 40.4% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -1.480ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               pipe_one_H/move1/pipe_pic_b_temp_6 (FF)
+  Destination:          pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram (RAM)
+  Requirement:          10.000ns
+  Data Path Delay:      9.672ns (Levels of Logic = 10)
+  Clock Path Skew:      -1.773ns (2.736 - 4.509)
+  Source Clock:         game_clk_BUFG rising at 0.000ns
+  Destination Clock:    system_clk_IBUF_BUFG rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pipe_one_H/move1/pipe_pic_b_temp_6 to pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram
+    Location                Delay type         Delay(ns)  Physical Resource
+                                                          Logical Resource(s)
+    ----------------------------------------------------  -------------------
+    SLICE_X74Y126.CQ        Tcko                  0.393   pipe_one_H/move1/pipe_pic_b_temp<6>
+                                                          pipe_one_H/move1/pipe_pic_b_temp_6
+    SLICE_X72Y126.B2        net (fanout=7)        0.842   pipe_one_H/move1/pipe_pic_b_temp<6>
+    SLICE_X72Y126.B         Tilo                  0.097   pipe_low_pic_t<8>
+                                                          pip_one_L/Madd_pipe_pic_t_cy<6>11
+    SLICE_X73Y126.A5        net (fanout=2)        0.395   pip_one_L/Madd_pipe_pic_t_cy<6>
+    SLICE_X73Y126.A         Tilo                  0.097   pipe_one_H/move1/pipe_pic_b_temp<4>
+                                                          pip_one_L/Madd_pipe_pic_t_xor<7>11
+    SLICE_X77Y132.D5        net (fanout=4)        0.542   pipe_low_pic_t<7>
+    SLICE_X77Y132.DMUX      Tilo                  0.252   pip_one_L/GND_35_o_GND_35_o_sub_3_OUT<7>
+                                                          pip_one_L/Msub_GND_35_o_GND_35_o_sub_3_OUT7
+    SLICE_X77Y133.A3        net (fanout=2)        0.454   pip_one_L/Msub_GND_35_o_GND_35_o_sub_3_OUT7
+    SLICE_X77Y133.DMUX      Topad                 0.686   pip_one_L/GND_35_o_GND_35_o_sub_3_OUT<9>
+                                                          pip_one_L/Msub_GND_35_o_GND_35_o_sub_3_OUT_lut<0>8
+                                                          pip_one_L/Msub_GND_35_o_GND_35_o_sub_3_OUT_xor<0>_10
+    DSP48_X2Y53.A16         net (fanout=6)        0.436   pip_one_L/GND_35_o_GND_35_o_sub_3_OUT<11>
+    DSP48_X2Y53.P1          Tdspdo_A_P_MULT       2.823   pip_one_L/Mmult_n0026
+                                                          pip_one_L/Mmult_n0026
+    SLICE_X79Y130.B6        net (fanout=1)        0.325   pip_one_L/n0026<1>
+    SLICE_X79Y130.COUT      Topcyb                0.509   pip_one_L/Madd_n0021_Madd_cy<3>
+                                                          pip_one_L/Madd_n0021_Madd_lut<1>
+                                                          pip_one_L/Madd_n0021_Madd_cy<3>
+    SLICE_X79Y131.CIN       net (fanout=1)        0.000   pip_one_L/Madd_n0021_Madd_cy<3>
+    SLICE_X79Y131.COUT      Tbyp                  0.089   pip_one_L/Madd_n0021_Madd_cy<7>
+                                                          pip_one_L/Madd_n0021_Madd_cy<7>
+    SLICE_X79Y132.CIN       net (fanout=1)        0.000   pip_one_L/Madd_n0021_Madd_cy<7>
+    SLICE_X79Y132.COUT      Tbyp                  0.089   pip_one_L/Madd_n0021_Madd_cy<11>
+                                                          pip_one_L/Madd_n0021_Madd_cy<11>
+    SLICE_X79Y133.CIN       net (fanout=1)        0.000   pip_one_L/Madd_n0021_Madd_cy<11>
+    SLICE_X79Y133.BMUX      Tcinb                 0.368   pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/sel_pipe<1>
+                                                          pip_one_L/Madd_n0021_Madd_xor<13>
+    SLICE_X76Y136.D6        net (fanout=5)        0.482   pip_one_L/n0021<13>
+    SLICE_X76Y136.D         Tilo                  0.097   pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ena_array<2>
+                                                          pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ADDR[1]_PWR_16_o_equal_3_o<1>1
+    RAMB36_X2Y27.ENARDENL   net (fanout=2)        0.348   pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ena_array<2>
+    RAMB36_X2Y27.CLKARDCLKL Trcck_RDEN            0.348   pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram
+                                                          pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram
+    ----------------------------------------------------  ---------------------------
+    Total                                         9.672ns (5.848ns logic, 3.824ns route)
+                                                          (60.5% logic, 39.5% route)
+
+--------------------------------------------------------------------------------
+Slack (setup path):     -1.477ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               pipe_one_H/move1/pipe_pic_b_temp_6 (FF)
+  Destination:          pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram (RAM)
+  Requirement:          10.000ns
+  Data Path Delay:      9.669ns (Levels of Logic = 10)
+  Clock Path Skew:      -1.773ns (2.736 - 4.509)
+  Source Clock:         game_clk_BUFG rising at 0.000ns
+  Destination Clock:    system_clk_IBUF_BUFG rising at 10.000ns
+  Clock Uncertainty:    0.035ns
+
+  Clock Uncertainty:          0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter (TSJ):  0.070ns
+    Total Input Jitter (TIJ):   0.000ns
+    Discrete Jitter (DJ):       0.000ns
+    Phase Error (PE):           0.000ns
+
+  Maximum Data Path at Slow Process Corner: pipe_one_H/move1/pipe_pic_b_temp_6 to pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram
+    Location                Delay type         Delay(ns)  Physical Resource
+                                                          Logical Resource(s)
+    ----------------------------------------------------  -------------------
+    SLICE_X74Y126.CQ        Tcko                  0.393   pipe_one_H/move1/pipe_pic_b_temp<6>
+                                                          pipe_one_H/move1/pipe_pic_b_temp_6
+    SLICE_X72Y126.B2        net (fanout=7)        0.842   pipe_one_H/move1/pipe_pic_b_temp<6>
+    SLICE_X72Y126.B         Tilo                  0.097   pipe_low_pic_t<8>
+                                                          pip_one_L/Madd_pipe_pic_t_cy<6>11
+    SLICE_X73Y126.A5        net (fanout=2)        0.395   pip_one_L/Madd_pipe_pic_t_cy<6>
+    SLICE_X73Y126.A         Tilo                  0.097   pipe_one_H/move1/pipe_pic_b_temp<4>
+                                                          pip_one_L/Madd_pipe_pic_t_xor<7>11
+    SLICE_X77Y132.D5        net (fanout=4)        0.542   pipe_low_pic_t<7>
+    SLICE_X77Y132.DMUX      Tilo                  0.252   pip_one_L/GND_35_o_GND_35_o_sub_3_OUT<7>
+                                                          pip_one_L/Msub_GND_35_o_GND_35_o_sub_3_OUT7
+    SLICE_X77Y133.A3        net (fanout=2)        0.454   pip_one_L/Msub_GND_35_o_GND_35_o_sub_3_OUT7
+    SLICE_X77Y133.DMUX      Topad                 0.686   pip_one_L/GND_35_o_GND_35_o_sub_3_OUT<9>
+                                                          pip_one_L/Msub_GND_35_o_GND_35_o_sub_3_OUT_lut<0>8
+                                                          pip_one_L/Msub_GND_35_o_GND_35_o_sub_3_OUT_xor<0>_10
+    DSP48_X2Y53.A16         net (fanout=6)        0.436   pip_one_L/GND_35_o_GND_35_o_sub_3_OUT<11>
+    DSP48_X2Y53.P0          Tdspdo_A_P_MULT       2.823   pip_one_L/Mmult_n0026
+                                                          pip_one_L/Mmult_n0026
+    SLICE_X79Y130.A6        net (fanout=1)        0.325   pip_one_L/n0026<0>
+    SLICE_X79Y130.COUT      Topcya                0.492   pip_one_L/Madd_n0021_Madd_cy<3>
+                                                          pip_one_L/Madd_n0021_Madd_lut<0>
+                                                          pip_one_L/Madd_n0021_Madd_cy<3>
+    SLICE_X79Y131.CIN       net (fanout=1)        0.000   pip_one_L/Madd_n0021_Madd_cy<3>
+    SLICE_X79Y131.COUT      Tbyp                  0.089   pip_one_L/Madd_n0021_Madd_cy<7>
+                                                          pip_one_L/Madd_n0021_Madd_cy<7>
+    SLICE_X79Y132.CIN       net (fanout=1)        0.000   pip_one_L/Madd_n0021_Madd_cy<7>
+    SLICE_X79Y132.COUT      Tbyp                  0.089   pip_one_L/Madd_n0021_Madd_cy<11>
+                                                          pip_one_L/Madd_n0021_Madd_cy<11>
+    SLICE_X79Y133.CIN       net (fanout=1)        0.000   pip_one_L/Madd_n0021_Madd_cy<11>
+    SLICE_X79Y133.AMUX      Tcina                 0.297   pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/has_mux_a.A/sel_pipe<1>
+                                                          pip_one_L/Madd_n0021_Madd_xor<13>
+    SLICE_X76Y136.D5        net (fanout=5)        0.567   pip_one_L/n0021<12>
+    SLICE_X76Y136.D         Tilo                  0.097   pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ena_array<2>
+                                                          pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/bindec_a.bindec_inst_a/ADDR[1]_PWR_16_o_equal_3_o<1>1
+    RAMB36_X2Y27.ENARDENL   net (fanout=2)        0.348   pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ena_array<2>
+    RAMB36_X2Y27.CLKARDCLKL Trcck_RDEN            0.348   pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram
+                                                          pip_one_L/PIPE_1L/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[4].ram.r/v6_init.ram/NO_BMM_INFO.SP.SIMPLE_PRIM36.ram
+    ----------------------------------------------------  ---------------------------
+    Total                                         9.669ns (5.760ns logic, 3.909ns route)
+                                                          (59.6% logic, 40.4% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+--------------------------------------------------------------------------------
+
+Paths for end point KeyBoardControl/Keyboard/ps2d_filter_3 (SLICE_X68Y125.DX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.183ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               KeyBoardControl/Keyboard/ps2d_filter_4 (FF)
+  Destination:          KeyBoardControl/Keyboard/ps2d_filter_3 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.195ns (Levels of Logic = 0)
+  Clock Path Skew:      0.012ns (0.071 - 0.059)
+  Source Clock:         system_clk_IBUF_BUFG rising at 10.000ns
+  Destination Clock:    system_clk_IBUF_BUFG rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: KeyBoardControl/Keyboard/ps2d_filter_4 to KeyBoardControl/Keyboard/ps2d_filter_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X69Y126.AQ     Tcko                  0.141   KeyBoardControl/Keyboard/ps2d_filter<7>
+                                                       KeyBoardControl/Keyboard/ps2d_filter_4
+    SLICE_X68Y125.DX     net (fanout=2)        0.126   KeyBoardControl/Keyboard/ps2d_filter<4>
+    SLICE_X68Y125.CLK    Tckdi       (-Th)     0.072   KeyBoardControl/Keyboard/ps2d_filter<3>
+                                                       KeyBoardControl/Keyboard/ps2d_filter_3
+    -------------------------------------------------  ---------------------------
+    Total                                      0.195ns (0.069ns logic, 0.126ns route)
+                                                       (35.4% logic, 64.6% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point KeyBoardControl/Keyboard/ps2c_filter_3 (SLICE_X82Y107.DX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.238ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               KeyBoardControl/Keyboard/ps2c_filter_4 (FF)
+  Destination:          KeyBoardControl/Keyboard/ps2c_filter_3 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.253ns (Levels of Logic = 0)
+  Clock Path Skew:      0.015ns (0.085 - 0.070)
+  Source Clock:         system_clk_IBUF_BUFG rising at 10.000ns
+  Destination Clock:    system_clk_IBUF_BUFG rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: KeyBoardControl/Keyboard/ps2c_filter_4 to KeyBoardControl/Keyboard/ps2c_filter_3
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X82Y108.AQ     Tcko                  0.141   KeyBoardControl/Keyboard/ps2c_filter<7>
+                                                       KeyBoardControl/Keyboard/ps2c_filter_4
+    SLICE_X82Y107.DX     net (fanout=2)        0.184   KeyBoardControl/Keyboard/ps2c_filter<4>
+    SLICE_X82Y107.CLK    Tckdi       (-Th)     0.072   KeyBoardControl/Keyboard/ps2c_filter<3>
+                                                       KeyBoardControl/Keyboard/ps2c_filter_3
+    -------------------------------------------------  ---------------------------
+    Total                                      0.253ns (0.069ns logic, 0.184ns route)
+                                                       (27.3% logic, 72.7% route)
+
+--------------------------------------------------------------------------------
+
+Paths for end point KeyBoardControl/Keyboard/ps2d_filter_4 (SLICE_X69Y126.AX), 1 path
+--------------------------------------------------------------------------------
+Slack (hold path):      0.249ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               KeyBoardControl/Keyboard/ps2d_filter_5 (FF)
+  Destination:          KeyBoardControl/Keyboard/ps2d_filter_4 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      0.249ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         system_clk_IBUF_BUFG rising at 10.000ns
+  Destination Clock:    system_clk_IBUF_BUFG rising at 10.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path at Fast Process Corner: KeyBoardControl/Keyboard/ps2d_filter_5 to KeyBoardControl/Keyboard/ps2d_filter_4
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X69Y126.BQ     Tcko                  0.141   KeyBoardControl/Keyboard/ps2d_filter<7>
+                                                       KeyBoardControl/Keyboard/ps2d_filter_5
+    SLICE_X69Y126.AX     net (fanout=2)        0.178   KeyBoardControl/Keyboard/ps2d_filter<5>
+    SLICE_X69Y126.CLK    Tckdi       (-Th)     0.070   KeyBoardControl/Keyboard/ps2d_filter<7>
+                                                       KeyBoardControl/Keyboard/ps2d_filter_4
+    -------------------------------------------------  ---------------------------
+    Total                                      0.249ns (0.071ns logic, 0.178ns route)
+                                                       (28.5% logic, 71.5% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 7.859ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 2.141ns (467.071MHz) (Trper_CLKA)
+  Physical resource: day_background/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/CLKARDCLKL
+  Logical resource: day_background/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/CLKARDCLKL
+  Location pin: RAMB36_X0Y27.CLKARDCLKL
+  Clock network: system_clk_IBUF_BUFG
+--------------------------------------------------------------------------------
+Slack: 7.859ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 2.141ns (467.071MHz) (Trper_CLK_WF_NC(FMAX_CAS_WF_NC))
+  Physical resource: day_background/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/CLKARDCLKU
+  Logical resource: day_background/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_B/CLKARDCLKU
+  Location pin: RAMB36_X0Y27.CLKARDCLKU
+  Clock network: system_clk_IBUF_BUFG
+--------------------------------------------------------------------------------
+Slack: 7.859ns (period - min period limit)
+  Period: 10.000ns
+  Min period limit: 2.141ns (467.071MHz) (Trper_CLKA)
+  Physical resource: day_background/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T/CLKARDCLKL
+  Logical resource: day_background/U0/xst_blk_mem_generator/gnativebmg.native_blk_mem_gen/valid.cstr/ramloop[6].ram.r/v6_init.ram/NO_BMM_INFO.SP.CASCADED_PRIM36.ram_T/CLKARDCLKL
+  Location pin: RAMB36_X0Y28.CLKARDCLKL
+  Clock network: system_clk_IBUF_BUFG
+--------------------------------------------------------------------------------
+
+
+1 constraint not met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock sw
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+sw             |    5.301|         |         |         |
+system_clk     |    5.301|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock system_clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+sw             |   11.659|         |         |         |
+system_clk     |   11.659|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 447  Score: 291469  (Setup/Max: 291469, Hold: 0)
+
+Constraints cover 3456995 paths, 0 nets, and 5138 connections
+
+Design statistics:
+   Minimum period:  11.659ns{1}   (Maximum frequency:  85.771MHz)
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Sat Jan 07 06:09:11 2017 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 697 MB
+
+
+

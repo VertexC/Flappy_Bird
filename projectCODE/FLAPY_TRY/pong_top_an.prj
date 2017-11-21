@@ -1,0 +1,4 @@
+verilog work "vga_sync.v"
+verilog work "pon_graph_st.v"
+verilog work "clkdiv.v"
+verilog work "pong_top_an.v"

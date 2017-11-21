@@ -1,0 +1,17 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Dec 29 18:00:41 2016
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "AC18" LEVEL 1;
+COMP "rgb<0>" LOCATE = SITE "T20" LEVEL 1;
+COMP "rgb<1>" LOCATE = SITE "R22" LEVEL 1;
+COMP "rgb<2>" LOCATE = SITE "N21" LEVEL 1;
+COMP "hsync" LOCATE = SITE "M22" LEVEL 1;
+COMP "sw<0>" LOCATE = SITE "AA10" LEVEL 1;
+COMP "sw<1>" LOCATE = SITE "AB10" LEVEL 1;
+COMP "sw<2>" LOCATE = SITE "AA13" LEVEL 1;
+COMP "vsync" LOCATE = SITE "M21" LEVEL 1;
+COMP "reset" LOCATE = SITE "AF10" LEVEL 1;
+SCHEMATIC END;
+

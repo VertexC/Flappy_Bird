@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/NPC_Bird.xst" -ofn "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/NPC_Bird.syr" 

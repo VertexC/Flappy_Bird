@@ -1,0 +1,43 @@
+
+****** PlanAhead v14.7 (64-bit)
+  **** Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+    ** Copyright 1986-1999, 2001-2013 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from F:/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [F:/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [F:/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source {F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/pa.fromNetlist.tcl}
+# create_project -name FLAPY_TRY -dir "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/planAhead_run_3" -part xc7k160tffg676-1
+create_project: Time (s): elapsed = 00:00:10 . Memory (MB): peak = 428.023 ; gain = 40.867
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/vga_test.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY} }
+# set_property target_constrs_file "K7.ucf" [current_fileset -constrset]
+Adding file 'F:/study/Logic and Computer Design Fundamentals/final project/try/FLAPY_TRY/K7.ucf' to fileset 'constrs_1'
+# add_files [list {K7.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc7k160tffg676-1
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design vga_test.ngc ...
+WARNING:NetListWriters:298 - No output is written to vga_test.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file vga_test.edif ...
+ngc2edif: Total memory usage is 86592 kilobytes
+
+Parsing EDIF File [./planAhead_run_3/FLAPY_TRY.data/cache/vga_test_ngc_zx.edif]
+INFO: [Common 17-344] 'link_design' was cancelled
+INFO: [Common 17-344] 'source' was cancelled
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Thu Dec 29 15:40:45 2016...
+INFO: [Common 17-83] Releasing license: PlanAhead
